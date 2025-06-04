@@ -1,4 +1,4 @@
-@keyframes robot-teeth { /* movement around position */
+@keyframes robot-teeth {
   0% {
     transform: translateX(0);
     background-color: white;
@@ -108,7 +108,7 @@
   animation: robot-ear-left 2s infinite;
 }
 
-@keyframes robot-right-ear{ /*disappear and reappear*/
+@keyframes robot-right-ear{
   0%, 100% {
     opacity: 1;
   }
@@ -122,7 +122,7 @@
   animation: robot-right-ear 2s infinite;
 }
 
-@keyframes robot-nose-hover { /* rotate nose 360 degrees forever */
+@keyframes robot-nose-hover {
   0%,
   100% {
     transform: rotate(0deg);
