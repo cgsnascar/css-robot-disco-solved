@@ -1,0 +1,174 @@
+@keyframes robot-teeth { /* movement around position */
+  0% {
+    transform: translateX(0);
+    background-color: white;
+  }
+  10% {
+    transform: translateX(6px);
+    background-color: #eee;
+  }
+  25% {
+    transform: translateX(10px);
+    background-color: lightgray;
+  }
+  40% {
+    transform: translateX(6px);
+    background-color: #eee;
+  }
+  50% {
+    transform: translateX(0);
+    background-color: white;
+  }
+  60% {
+    transform: translateX(-6px);
+    background-color: #eee;
+  }
+  75% {
+    transform: translateX(-10px);
+    background-color: lightgray;
+  }
+  90% {
+    transform: translateX(-6px);
+    background-color: #eee;
+  }
+  100% {
+    transform: translateX(0);
+    background-color: white;
+  }  
+}
+
+.robot-tooth{ 
+  animation: robot-teeth 1s infinite;
+}
+
+@keyframes robot-eye-blink {
+  0%, 100% {
+    height: 40px;
+  }
+  50% {
+    height: 10px;
+  }
+}
+
+.robot-eye-left{
+  animation: robot-eye-blink 3s infinite;
+}
+
+@keyframes robot-right-eye {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    transform: translate(15px, 0) scale(0.95);
+  }
+  50% {
+    transform: translate(15px, 15px) scale(1);
+  }
+  75% {
+    transform: translate(0px, 15px) scale(0.95);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+.robot-eye-right {
+  animation: robot-right-eye 4s infinite;
+}
+
+@keyframes robot-ear-left {
+  0% {
+    transform: rotate(0deg);
+    scale: 1;
+  }
+  25% {
+    scale: 1.2;
+    transform: rotate(10deg);
+    background-color: aqua;
+  }
+  50% {
+    scale: 1;
+    transform: rotate(0deg);
+    background-color: lightgray;
+  }
+  75% {
+    scale: 1.2;
+    transform: rotate(-10deg);
+    background-color: purple;
+  }
+  100% {
+    scale: 1;
+    transform: rotate(0deg);
+    background-color: red;
+  }
+
+}
+
+.robot-ear-left {
+  animation: robot-ear-left 2s infinite;
+}
+
+@keyframes robot-right-ear{ /*disappear and reappear*/
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+
+}
+
+.robot-ear-right {
+  animation: robot-right-ear 2s infinite;
+}
+
+@keyframes robot-nose-hover { /* rotate nose 360 degrees forever */
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+.robot-nose:hover {
+  animation: robot-nose-hover 4s infinite;
+}
+
+/* hair */
+
+@keyframes robot-hair {
+  0% {
+    transform: translateY(0);
+    background-color: #d3d3d3;
+  }
+  25% {
+    transform: translateY(-10px);
+    background-color: #a9a9a9;
+  }
+  50% {
+    transform: translateY(0);
+    background-color: #d3d3d3;
+  }
+  75% {
+    transform: translateY(10px);
+    background-color: #a9a9a9;
+  }
+  100% {
+    transform: translateY(0);
+    background-color: #d3d3d3;
+  }
+}
+
+.robot-hair-one {
+  animation: robot-hair 3s infinite;
+}
+
+.robot-hair-two {
+  animation: robot-hair 2s infinite
+}
+
+.robot-hair-three {
+  animation: robot-hair 1.5s infinite;
+}

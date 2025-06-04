@@ -5,37 +5,129 @@ body {
 /* 👇👇👇 Paste the styles of your Fancy Robot from the "Position it right" assignment here 👇👇👇 */
 
 .robot-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 80px;
 }
 
 .robot-face-shape {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  margin-top: -100px;
+  background-color: #f0c674;
+  border: 5px solid black;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .robot-eye-left {
+  position: absolute;
+  top: 50px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border: 3px solid black;
+  left: 40px;
+  border-radius: 50%;
 }
 
 .robot-eye-right {
+  position: absolute;
+  top: 50px;
+  width: 40px;
+  height: 40px;
+  border: 3px solid black;
+  right: 40px;
+  border-radius: 30%;
+  background-image: url("https://picsum.photos/id/40/4106/2806");
+  background-size: 40px 40px;
 }
 
 .robot-ear-left {
+  position: absolute;
+  top: 46%;
+  width: 30px;
+  height: 50px;
+  background: #d3d3d3;
+  border: 2px solid black;
+  left: 43.3%;
+  border-radius: 50%;
 }
 
 .robot-ear-right {
+  position: absolute;
+  top: 46%;
+  width: 30px;
+  height: 50px;
+  background: red;
+  border: 2px solid black;
+  right: 41.7%;
+  border-radius: 20%;
 }
 
 .robot-nose {
-}
-
-.robot-nose:before {
-}
-
-.robot-nose:after {
+  position: absolute;
+  top: 105px;
+  left: 85px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 40px solid lightgray;
 }
 
 .robot-teeth {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  width: 116px;
+  text-align: center;
+  opacity: 50%;
 }
 
 .robot-tooth {
+  display: inline-block; /* Allow teeth to be side-by-side without grid */
+  width: 12px;
+  height: 12px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 4px;
 }
 
 .robot-hair-style {
+  position: absolute;
+  top: 360px;
+  left: 48.5%;
+}
+
+.robot-hair-one {
+  float: left;
+  width: 15px;
+  height: 30px;
+  background-image: linear-gradient(to bottom, red, blue);
+  margin-right: 2px;
+  border-radius: 10px 10px 0 0;
+}
+
+.robot-hair-two {
+  float: left;
+  width: 15px;
+  height: 30px;
+  background-image: linear-gradient(to bottom, #9146FF, white);
+  margin-right: 2px;
+  border-radius: 5px 5px 0 0;
+}
+
+.robot-hair-three {
+  float: left;
+  width: 15px;
+  height: 30px;
+  background-color: white;
+  margin-right: 2px;
+  border-radius: 8px 8px 0 0;  
 }
